@@ -14,7 +14,7 @@ CONFIG_FILE = "check_channels.json"
 class CheckCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.api_url = "https://api-check-ban.up.railway.app/check_ban/"
+        self.api_url = https://bot-api-ljat.onrender.com"
         self.session = aiohttp.ClientSession()
         self.config = self.load_config()
         self.cooldowns = {}
@@ -266,4 +266,5 @@ class CheckCommands(commands.Cog):
 
 
 async def setup(bot):
+
     await bot.add_cog(CheckCommands(bot))
