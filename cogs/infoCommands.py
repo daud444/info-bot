@@ -16,7 +16,7 @@ CONFIG_FILE = "info_channels.json"
 class InfoCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.api_url = "https://info-api.up.railway.app/info"
+        self.api_url = "https://bot-api-ljat.onrender.com"
         self.generate_url = "https://generate-outfits.onrender.com/generate-outfit"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
@@ -375,4 +375,5 @@ class InfoCommands(commands.Cog):
 
 
 async def setup(bot):
+
     await bot.add_cog(InfoCommands(bot))
